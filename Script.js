@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://127.0.0.1:8000';
+const SERVER_URL = 'https://chat-of-87.onrender.com/';
 
 const loginScreen = document.getElementById('login-screen');
 const chatScreen = document.getElementById('chat-screen');
