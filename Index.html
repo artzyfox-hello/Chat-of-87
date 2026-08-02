@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Chat of '87</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="chat-container">
+    <header>
+      <h1>THE CHAT OF '87</h1>
+      <p>FAZBEAR ENT. // INTERNAL NET</p>
+    </header>
+
+    <!-- SCREEN 1: LOGIN / REGISTER -->
+    <div id="login-screen">
+      <h3>SYSTEM LOGIN</h3>
+      <input type="text" id="login-username" placeholder="Username..." required />
+      
+      <!-- Normal password input! -->
+      <input type="password" id="login-password" placeholder="Password..." required />
+      
+      <button id="auth-btn">LOGIN / REGISTER</button>
+      <p id="auth-status"></p>
+    </div>
+
+    <!-- SCREEN 2: CHAT BOX -->
+    <div id="chat-screen" style="display: none;">
+      <p>LOGGED IN AS: <strong id="current-user-display">--</strong></p>
+      
+      <form id="chat-form">
+        <div class="message-box">
+          <input type="text" id="message-input" placeholder="Type message..." required autocomplete="off" />
+          <button type="submit">TRANSMIT</button>
+        </div>
+      </form>
+      <p id="status-log"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
